@@ -10,6 +10,7 @@
 # bg
 # sudo nohup python3 app.py > log.txt 2>&1 &
 
+
 from flask import Flask, render_template
 import sqlite3
 import os # operating system enables us to have access to underlying os 
