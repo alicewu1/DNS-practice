@@ -20,7 +20,18 @@ HHA 504 / Cloud Computing / Assignment 8 / Domain Names
     -       Host Name: @
             Destination IP Address: [GCP VM External IP Address]
             TTL: 7200
-
+- Under **NS Records** > **Add NS Record**
+    -       Zone: @ (alice-wu.tech)
+    -       Value: www (alice-wu.tech)
+    -       TTL: 7200
+           
+# To create a subdomain:
+- Under **(A) Records** > **Add a Record** #2
+    -       Host Name: **app***
+            Destination IP Address: [GCP VM External IP Address]
+            TTL: 7200
+- In your app.py file, change @app.route('/', subdomain=app)
+- Verify changes work: app.alice-wu.tech
 
 # Set Up GCP VM 
 - by following instructions from **setup.GCP.md** 

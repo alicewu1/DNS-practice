@@ -26,10 +26,13 @@ def get_db_connection():
     # for more information about these two lines, good conversation on stackoverflow: https://stackoverflow.com/questions/44009452/what-is-the-purpose-of-the-row-factory-method-of-an-sqlite3-connection-object found there
     return conn
 
-
 @app.route('/')
 def home():
-    return render_template('homepage.html')
+    return render_template('landing.html')
+
+@app.route('/signin')
+def home():
+    return render_template('signin.html')
 
 
 @app.route('/patients')
