@@ -12,7 +12,7 @@ HHA 504 / Cloud Computing / Assignment 8 / Domain Names
 - Using [get.tech](https://get.tech/github-student-developer-pack) 
 - Domain Name: **alice-wu.tech**
 
-# Create a A record that links together the domain with the IP address of your flask app deployed on either GCP or Azure 
+# Create an (A) record that links together the domain with the IP address of your flask app deployed on GCP
 - Under your get.tech Control Panel, navigate to **Manage Orders > List/Search Orders**
 - Select your new domain name and scroll down to **DNS Management**
 - Select **Manage DNS**
@@ -22,8 +22,8 @@ HHA 504 / Cloud Computing / Assignment 8 / Domain Names
             TTL: 7200
 - Under **NS Records** > **Add NS Record**
     -       Zone: @ (alice-wu.tech)
-    -       Value: www (alice-wu.tech)
-    -       TTL: 7200
+            Value: www (alice-wu.tech)
+            TTL: 7200
            
 # To create a subdomain:
 - Under **(A) Records** > **Add a Record** #2
@@ -34,9 +34,9 @@ HHA 504 / Cloud Computing / Assignment 8 / Domain Names
 - Verify changes work: app.alice-wu.tech
 
 # Set Up GCP VM 
-- by following instructions from **setup_GCP.md** 
+- By following instructions from **setup_GCP.md** 
 - Verify flask is deployed by refreshing your domain name in your browser
 
 
 # **images** folder
-- contains screenshots of my live flask app deployed on my website
+- Contains screenshots of my live flask app deployed on my website
