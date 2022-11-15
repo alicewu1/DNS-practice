@@ -22,8 +22,9 @@ HHA 504 / Cloud Computing / Assignment 8 / Domain Names
             TTL: 7200
 
 
-# Connect to GCP VM
-
+# Set Up GCP VM 
+- by following instructions from **setup.GCP.md** 
+- Verify flask is deployed by refreshing your domain name in your browser
 
 
 
