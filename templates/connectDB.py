@@ -7,7 +7,7 @@ DATABASE_NAME = realpath('patient.db')
 
 
 def get_db_connection():
-    conn = sqlite3.connect(r"C:\Users\Lcw62\OneDrive\Documents\GitHub\flask-with-db\templates\patient.db")
+    conn = sqlite3.connect(r"C:\Users\Lcw62\OneDrive\Documents\GitHub\DNS-practice\patient.db")
     conn.row_factory = sqlite3.Row
     return conn
 
