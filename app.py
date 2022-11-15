@@ -30,10 +30,6 @@ def get_db_connection():
 def home():
     return render_template('landing.html')
 
-@app.route('/signin')
-def home():
-    return render_template('signin.html')
-
 
 @app.route('/patients')
 def index():
